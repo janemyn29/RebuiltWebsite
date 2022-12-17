@@ -358,6 +358,9 @@
 .ml-200{
     margin-left:200px
 }
+.ml-225{
+    margin-left:225px
+}
 .mr-5{
     margin-right:5px
 }
@@ -957,4 +960,8 @@
 }
 .pr-200{
     padding-right:200px
+}
+.mb-30-pd-5 {
+    margin-bottom: 30px;
+    padding: 5px;
 }
