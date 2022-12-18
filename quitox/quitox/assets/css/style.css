@@ -6961,4 +6961,7 @@ blockquote cite::before {
   font-size: 13px;
   color: #007AFF;
 }
+p{
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 /*# sourceMappingURL=style.css.map */
