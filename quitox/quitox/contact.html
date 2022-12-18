@@ -184,8 +184,15 @@
       <!-- breadcrumb area end -->
 
       <!-- contact area start -->
-      <div class="tp-conatact-area pt-60 pb-60">
+      <div class="tp-conatact-area pt-30 pb-60">
          <div class="container">
+            <div class="row">
+               <ul class="breadcrumb mb-30">
+                  <li><a href="#">Trang Chủ</a></li>
+                  <li>Liên Hệ</li>
+               </ul>
+            </div>
+            
             <div class="row">
                <div class="col-xl-4 col-lg-4 col-md-4 mb-30">
                   <div class="contact-info text-center" style="border-color: #141774;">
@@ -296,7 +303,9 @@
             </div>
          </div> -->
          <div class="tp-footer-bottom__area mt-80 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+
             <div class="container">
+               
                <div class="tp-footer-bottom__border-top pt-40">
                   <div class="row align-items-center">
                      <div class="col-xl-2 col-lg-2 col-md-6 col-12 order-2 order-lg-1 text-center text-md-start">
@@ -328,16 +337,52 @@
       <!-- tp-footer-area-end -->
    </footer>
 <style>
-   .tp-header__space.header-sticky {
-      position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      background-color: #141774;
-      width: 100%;
-      animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-      z-index: 999;
-   }
+   .navbar1 {
+         display: flex;
+         justify-content: center;
+      }
+
+      .tp-header__space.header-sticky {
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         background-color: #141774;
+         width: 100%;
+         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+         z-index: 999;
+      }
+      ul.breadcrumb {
+         padding: 10px 16px;
+         list-style: none;
+         background-color: #eee;
+      }
+
+      /* Display list items side by side */
+      ul.breadcrumb li {
+         display: inline;
+         font-size: 22px;
+      }
+
+      /* Add a slash symbol (/) before/behind each list item */
+      ul.breadcrumb li+li:before {
+         padding: 8px;
+         color: black;
+         content: "/\00a0";
+      }
+
+      /* Add a color to all links inside the list */
+      ul.breadcrumb li a {
+         color: #1b1f9e;
+         text-decoration: none;
+      }
+
+      /* Add a color on mouse-over */
+      ul.breadcrumb li a:hover {
+         color: black;
+         text-decoration: underline;
+      }
+   
 </style>
 
    <!-- JS here -->

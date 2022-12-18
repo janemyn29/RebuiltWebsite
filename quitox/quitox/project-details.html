@@ -199,8 +199,15 @@
       <!-- breadcrumb area end -->
 
       <!-- case-details- area- start -->
-      <div class="cd-banner-area pt-110 pb-100">
+      <div class="cd-banner-area pt-30 pb-100">
         <div class="container">
+          <div class="row">
+            <ul class="breadcrumb mb-30">
+               <li><a href="#">Trang Chủ</a></li>
+               <li><a href="#">Sản Phẩm</a></li>
+               <li>Chi Tiết</li>
+            </ul>
+         </div>
           <div class="row">
             <div
               class="col-xl-12 wow tpfadeUp"
@@ -226,6 +233,7 @@
       <!-- project-info- area- start -->
       <div id="project-details" class="cd-project-info-area pb-100">
         <div class="container">
+          
           <div class="cd-project-wrapper">
             <div class="row">
               <div class="col-xl-6 col-lg-6 col-md-6 col-12">
@@ -500,15 +508,50 @@
       <!-- tp-footer-area-end -->
     </footer>
     <style>
+      .navbar1 {
+         display: flex;
+         justify-content: center;
+      }
+
       .tp-header__space.header-sticky {
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        background-color: #141774;
-        width: 100%;
-        animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
-        z-index: 999;
+         position: fixed;
+         top: 0;
+         left: 0;
+         right: 0;
+         background-color: #141774;
+         width: 100%;
+         animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
+         z-index: 999;
+      }
+      ul.breadcrumb {
+         padding: 10px 16px;
+         list-style: none;
+         background-color: #eee;
+      }
+
+      /* Display list items side by side */
+      ul.breadcrumb li {
+         display: inline;
+         font-size: 22px;
+      }
+
+      /* Add a slash symbol (/) before/behind each list item */
+      ul.breadcrumb li+li:before {
+         padding: 8px;
+         color: black;
+         content: "/\00a0";
+      }
+
+      /* Add a color to all links inside the list */
+      ul.breadcrumb li a {
+         color: #1b1f9e;
+         text-decoration: none;
+      }
+
+      /* Add a color on mouse-over */
+      ul.breadcrumb li a:hover {
+         color: black;
+         text-decoration: underline;
       }
     </style>
 
