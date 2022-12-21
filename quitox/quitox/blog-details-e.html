@@ -27,6 +27,43 @@
    <link rel="stylesheet" href="assets/css/magnific-popup.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/style.css">
+   <style>
+      .nut_dropdown {
+
+   color: white;
+         width: 50px;
+   font-size: 16px;
+   border: none;
+ }
+/* Thiết lập vị trí cho thẻ div với class dropdown*/
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+/* Nội dung Dropdown */
+ .noidung_dropdown {
+   /*Ẩn nội dung các đường dẫn*/
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+/* Thiết kế style cho các đường dẫn trong Dropdown */
+ .noidung_dropdown a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ /* thay đổi màu background khi hover vào đường dẫn */
+ .noidung_dropdown a:hover {background-color: #ddd;}
+/* hiển thị nội dung dropdown khi hover */
+ .dropdown:hover .noidung_dropdown {display: block;}
+/* Thay đổi màu background cho nút khi được hover */
+ .dropdown:hover .nut_dropdown {background-color: #00bfff;}
+   </style>
 </head>
 
 <body>
@@ -50,92 +87,55 @@
 
    <header>
       <!-- tp-header-area-start -->
-      <!-- <div class="tp-header__top-area theme-bg tp-header__space-3 d-none d-sm-block">
-       <div class="container-fluid">
-          <div class="row align-items-center">
-             <div class="col-xxl-8 col-xl-8 col-lg-6 col-md-6 col-6">
-                <div class="tp-header__top-left">
-                   <a href="tel:915900885">
-                      <svg width="14" height="19" viewBox="0 0 14 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <circle cx="2" cy="2" r="2" fill="#3EB7FD" />
-                         <circle cx="7" cy="2" r="2" fill="#3EB7FD" />
-                         <circle cx="12" cy="2" r="2" fill="#3EB7FD" />
-                         <circle cx="12" cy="7" r="2" fill="#3EB7FD" />
-                         <circle cx="12" cy="12" r="2" fill="#3EB7FD" />
-                         <circle cx="7" cy="7" r="2" fill="#3EB7FD" />
-                         <circle cx="7" cy="12" r="2" fill="#3EB7FD" />
-                         <circle cx="7" cy="17" r="2" fill="#3EB7FD" />
-                         <circle cx="2" cy="7" r="2" fill="#3EB7FD" />
-                         <circle cx="2" cy="12" r="2" fill="#3EB7FD" />
-                      </svg>
-                      <span>Help Desk : <b class="frist-child">+91 590 088 55 </b></span>
-                   </a> -->
-      <!-- <a class="last-child" href="#">
-                      <svg width="16" height="15" viewBox="0 0 16 15" fill="none" xmlns="http://www.w3.org/2000/svg">
-                         <path
-                            d="M16 7.3125C16 6.68359 15.6445 6.10938 15.125 5.80859V1.65234C15.125 1.40625 14.9336 0.75 14.25 0.75C14.0312 0.75 13.8398 0.832031 13.7031 0.96875L11.3516 2.82812C10.2031 3.75781 8.72656 4.25 7.25 4.25H2C1.01562 4.25 0.25 5.04297 0.25 6V8.625C0.25 9.60938 1.01562 10.375 2 10.375H2.90234C2.875 10.6758 2.84766 10.9766 2.84766 11.25C2.84766 12.3438 3.09375 13.3828 3.55859 14.2852C3.69531 14.5859 3.99609 14.75 4.32422 14.75H6.34766C7.05859 14.75 7.49609 13.957 7.05859 13.3828C6.62109 12.7812 6.34766 12.0703 6.34766 11.25C6.34766 10.9492 6.40234 10.6758 6.45703 10.375H7.25C8.72656 10.375 10.2031 10.8945 11.3516 11.8242L13.7031 13.6836C13.8125 13.793 14.0586 13.875 14.2227 13.875C14.9062 13.875 15.0977 13.2734 15.0977 13V8.84375C15.6445 8.54297 16 7.96875 16 7.3125ZM13.375 11.1953L12.4453 10.457C10.9688 9.28125 9.13672 8.625 7.25 8.625V6C9.13672 6 10.9688 5.37109 12.4453 4.19531L13.375 3.45703V11.1953Z"
-                            fill="#3EB7FD" />
-                      </svg>
-                      <span><b>Now Hiring: </b>Are you a driven and motivated 1st Line IT Support Engineer?</span>
-                   </a> -->
-      <!-- </div>
-             </div>
-             <div class="col-xxl-4 col-xl-4 col-lg-6 col-md-6 col-6">
-                <div class="tp-header__top-right text-end">
-                   <a href="#"><i class="fab fa-facebook-f"></i></a>
-                   <a href="#"><i class="fab fa-twitter"></i></a>
-                   <a href="#"><i class="fab fa-instagram"></i></a>
-                   <a href="#"><i class="fab fa-linkedin"></i></a>
-                   <a href="#"><i class="fab fa-pinterest"></i></a>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div> -->
-
       <div id="header-sticky"
-         class="tp-header__area tp-header__space tp-header__transparent tp-header__menu-space z-index-5"
-         style="padding-top: 0px;" class="navSpec">
+         class="tp-header__area tp-header__space-3 tp-header__transparent z-index-5 tp-header__bottom p-relative">
          <div class="container-fluid">
             <div class="row align-items-center">
                <div class="col-xl-2 col-lg-2 col-md-6 col-7">
                   <div class="tp-header__logo">
-                     <a href="index.html">
-                        <img src="assets/img/logo/logo.png" alt="">
+                     <a href="index-3.html">
+                        <img src="assets/img/logo/logo-black.png" alt="">
                      </a>
                   </div>
                </div>
-               <div class="col-xl-9 col-lg-9 d-none d-lg-block" style="padding-left: 0px;">
-                  <div class="tp-header__main-menu tp-header__white-menu tp-header__menu-3">
+               <div class="col-xl-9 col-lg-9 d-none d-lg-block">
+                  <div class="tp-header__main-menu tp-header__black-menu tp-header__menu-3">
                      <nav id="mobile-menu">
-                        <ul class="navbar1" style="margin-left: 0px;">
-                           <li class="navbar1_link"><a href="index.html">Home</a>
-
+                        <ul>
+                           <li><a href="index-3.html">Home</a>
+                              
                            </li>
-                           <li class="navbar1_link"><a href="about-us.html">About Us</a>
-
+                           <li><a href="about-us-e.html">About Us</a>
+                              
                            </li>
-                           <li class="navbar1_link"><a href="project.html">products</a>
-
+                           <li><a href="project-e.html">Product</a>
+                              
                            </li>
-                           <li class="active" class="navbar1_link"><a href="recruit.html">recruitment</a></li>
-                           <li class="navbar1_link"><a href="blog.html">Blogs</a></li>
-                           <li class="navbar1_link"><a href="contact.html">contact</a></li>
+                           <li><a href="recruit-e.html">Recruitment</a></li>
+                           <li><a href="blog-e.html">Blogs</a></li>
+                           <li><a href="contact-e.html">Contact</a></li>
                         </ul>
                      </nav>
                   </div>
                </div>
-               <div class="col-xl-1 col-lg-3 col-md-6 col-5">
+               <div class="col-xl-1 col-lg-1 col-md-6 col-5" style="padding-left: 0px;padding-right: 0px;">
                   <div class="tp-header__right-two d-flex align-items-center justify-content-end">
-
-
-                     <a class="tp-header__bars tp-menu-bar" href="javascript:void(0)"><i class="far fa-bars"></i></a>
-
+                     <div class="dropdown">
+                        <button class="nut_dropdown" > <a class="tp-header__bars tp-menu-bar"  ><img src="assets/img/app/flag-1.png" alt=""></a></button>
+                        <div class="noidung_dropdown">
+                          <a href="#"><img width="20px" src="assets/img/app/flag.png" alt="">  Tiếng Việt</a>
+                          <a href="#" style="margin-left:0px"><img width="20px" src="assets/img/app/flag-1.png" alt="">  English</a>
+                          
+                        </div>
+                      </div>   
+                     <a class="tp-header__bars tp-menu-bar" style="margin-top: 15px;margin-bottom: 15px; margin-left: 10px; border-radius: 100%;" href="javascript:void(0)"><i class="far fa-bars"></i></a>
+        
                   </div>
                </div>
             </div>
          </div>
       </div>
+
 
       <!-- tp-header-area-end -->
    </header>
@@ -152,9 +152,11 @@
             </a>
          </div>
          <div class="tpoffcanvas__text">
-            <p>Amazing Technology and Solutions Company Limited was established on July 16, 2019.
+            <p>
+               Amazing Technology and Solutions Company Limited was established on July 16, 2019.
                With AMAZING, you can come up with new ideas, new products,
-               from which our company conveniently helps you build a product according to your idea.</p>
+               from which our company conveniently helps you build a product according to your idea.
+            </p>
          </div>
          <div class="mobile-menu"></div>
          <div class="tpoffcanvas__info">
@@ -204,13 +206,14 @@
    <main>
 
       <!-- breadcrumb area start -->
-      <div style="height: 98px;background-color: #141774; ">
-         <!-- <div class="breadcrumb__scroll-bottom smooth">
-                <a href="#project">
-                    <i class="far fa-arrow-down"></i>
-                </a>
-            </div> -->
-         <!-- <div class="container">
+      <div class="breadcrumb__area breadcrumb-height p-relative grey-bg"
+         data-background="assets/img/breadcrumb/breadcrumb2.jpg">
+         <div class="breadcrumb__scroll-bottom smooth">
+            <a href="#project">
+               <i class="far fa-arrow-down"></i>
+            </a>
+         </div>
+         <div class="container">
             <div class="row">
                <div class="col-xxl-12">
                   <div class="breadcrumb__content text-center">
@@ -223,8 +226,9 @@
                   </div>
                </div>
             </div>
-         </div> -->
+         </div>
       </div>
+      <!-- breadcrumb area end -->
       <!-- breadcrumb area end -->
 
       <!-- tp-abou-me-area-start -->

@@ -26,6 +26,43 @@
    <link rel="stylesheet" href="assets/css/magnific-popup.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/style.css">
+   <style>
+      .nut_dropdown {
+
+   color: white;
+         width: 50px;
+   font-size: 16px;
+   border: none;
+ }
+/* Thiết lập vị trí cho thẻ div với class dropdown*/
+ .dropdown {
+   position: relative;
+   display: inline-block;
+ }
+/* Nội dung Dropdown */
+ .noidung_dropdown {
+   /*Ẩn nội dung các đường dẫn*/
+   display: none;
+   position: absolute;
+   background-color: #f1f1f1;
+   min-width: 160px;
+   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+   z-index: 1;
+ }
+/* Thiết kế style cho các đường dẫn trong Dropdown */
+ .noidung_dropdown a {
+   color: black;
+   padding: 12px 16px;
+   text-decoration: none;
+   display: block;
+ }
+ /* thay đổi màu background khi hover vào đường dẫn */
+ .noidung_dropdown a:hover {background-color: #ddd;}
+/* hiển thị nội dung dropdown khi hover */
+ .dropdown:hover .noidung_dropdown {display: block;}
+/* Thay đổi màu background cho nút khi được hover */
+ .dropdown:hover .nut_dropdown {background-color: #00bfff;}
+   </style>
 </head>
 
 <body>
@@ -50,48 +87,57 @@
    <header>
       <!-- tp-header-area-start -->
       <div id="header-sticky"
-         class="tp-header__area tp-header__space tp-header__transparent tp-header__menu-space z-index-5"
-         style="padding-top: 0px;" class="navSpec">
+         class="tp-header__area tp-header__space-3 tp-header__transparent z-index-5 tp-header__bottom p-relative">
          <div class="container-fluid">
             <div class="row align-items-center">
                <div class="col-xl-2 col-lg-2 col-md-6 col-7">
                   <div class="tp-header__logo">
                      <a href="index.html">
-                        <img src="assets/img/logo/logo.png" alt="">
+                        <img src="assets/img/logo/logo-black.png" alt="">
                      </a>
                   </div>
                </div>
-               <div class="col-xl-9 col-lg-9 d-none d-lg-block" style="padding-left: 0px;">
-                  <div class="tp-header__main-menu tp-header__white-menu tp-header__menu-3">
+               <div class="col-xl-9 col-lg-9 d-none d-lg-block">
+                  <div class="tp-header__main-menu tp-header__black-menu tp-header__menu-3">
                      <nav id="mobile-menu">
-                        <ul class="navbar1" style="margin-left: 0px;">
-                           <li class="navbar1_link"><a href="index.html">Trang chủ</a>
-
+                        <ul>
+                           <li><a href="index.html">Trang Chủ</a>
+                              
                            </li>
-                           <li class="navbar1_link"><a href="about-us.html">giới thiệu</a>
-
+                           <li><a href="#">Giới Thiệu</a>
+                              
                            </li>
-                           <li class="navbar1_link"><a href="project.html">sản phẩm</a>
-
+                           <li><a href="project-details.html">Sản Phẩm</a>
+                              
                            </li>
-                           <li class="active" class="navbar1_link"><a href="recruit.html">tuyển dụng</a></li>
-                           <li class="navbar1_link"><a href="blog.html">tin tức</a></li>
-                           <li class="navbar1_link"><a href="contact.html">liên hệ</a></li>
+                           <li><a href="price.html">Tuyển Dụng</a></li>
+                           <li><a href="price.html">Tin Tức</a></li>
+                           <li><a href="contact.html">Liên Hệ</a></li>
                         </ul>
                      </nav>
                   </div>
                </div>
-               <div class="col-xl-1 col-lg-3 col-md-6 col-5">
+               <div class="col-xl-1 col-lg-1 col-md-6 col-5" style="padding-left: 0px;padding-right: 0px;">
                   <div class="tp-header__right-two d-flex align-items-center justify-content-end">
-
-
-                     <a class="tp-header__bars tp-menu-bar" href="javascript:void(0)"><i class="far fa-bars"></i></a>
-
+                     <div class="dropdown">
+                        <button class="nut_dropdown" > <a class="tp-header__bars tp-menu-bar"  ><img src="assets/img/app/flag.png" alt=""></a></button>
+                        <div class="noidung_dropdown">
+                          <a href="#"><img width="20px" src="assets/img/app/flag.png" alt="">  Tiếng Việt</a>
+                          <a href="#" style="margin-left:0px"><img width="20px" src="assets/img/app/flag-1.png" alt="">  English</a>
+                          
+                        </div>
+                      </div>   
+                     <a class="tp-header__bars tp-menu-bar" style="margin-top: 15px;margin-bottom: 15px; margin-left: 10px; border-radius: 100%;" href="javascript:void(0)"><i class="far fa-bars"></i></a>
+        
                   </div>
                </div>
             </div>
          </div>
       </div>
+
+
+      <!-- tp-header-area-end -->
+   </header>
 
       <!-- tp-header-area-end -->
    </header>
@@ -157,12 +203,10 @@
    <main>
 
       <!-- breadcrumb area start -->
-      <div 
-            style="height: 98px;background-color: #141774; "></div>
-      <!-- <div class="breadcrumb__area breadcrumb-height p-relative grey-bg"
-         data-background="assets/img/breadcrumb/breadcrumb.jpg">
+      <div class="breadcrumb__area breadcrumb-height p-relative grey-bg"
+         data-background="assets/img/breadcrumb/breadcrumb2.jpg">
          <div class="breadcrumb__scroll-bottom smooth">
-            <a href="#contact">
+            <a href="#project">
                <i class="far fa-arrow-down"></i>
             </a>
          </div>
@@ -170,28 +214,23 @@
             <div class="row">
                <div class="col-xxl-12">
                   <div class="breadcrumb__content text-center">
-                     <h3 class="breadcrumb__title">Liên hệ</h3>
+                     <h3 class="breadcrumb__title">Sản Phẩm</h3>
                      <div class="breadcrumb__list">
-                        <span><a href="#">Trang chủ</a></span>
+                        <span><a href="#">Trang Chủ</a></span>
                         <span class="dvdr"><i class="fa fa-angle-right"></i></span>
-                        <span>Liên hệ</span>
+                        <span>Sản Phảm</span>
                      </div>
                   </div>
                </div>
             </div>
          </div>
-      </div> -->
+      </div>
       <!-- breadcrumb area end -->
 
       <!-- tp-project-area-start -->
       <div class="tp-project__area tp-project__border pt-30 pb-90">
          <div class="container">
-            <div class="row">
-               <ul class="breadcrumb mb-30">
-                  <li><a href="#">Trang Chủ</a></li>
-                  <li>Sản Phẩm</li>
-               </ul>
-            </div>
+            
             <div class="row">
                <div class="col-xl-6 col-lg-6 wow tpfadeLeft" data-wow-duration=".9s" data-wow-delay=".5s">
                   <div id="project" class="tp-project__item mb-30">
@@ -267,114 +306,18 @@
       </div>
       <!-- tp-project-area-end -->
 
-      <!-- tp-support-area-start -->
-      <div class="tp-support__area pt-120 pb-120 grey-bg p-relative">
-         <div class="tp-support__bg">
-            <img src="assets/img/faq/faq-bg-shape.png" alt="">
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-12">
-                  <div class="tp-support__title-box text-center mb-70">
-                     <h3 class="tp-section-title">Bạn cần giúp đỡ? 🎧</h3>
-                  </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-12">
-                  <div class="tp-support__faq">
-                     <div class="tp-custom-accordio-2">
-                        <div class="accordion" id="accordionExample-2">
-                           <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-1">
-                                 <button class="accordion-buttons " type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                                    Làm sao để tôi thay đổi Email và mật khẩu?
-                                 </button>
-                              </h2>
-                              <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Bạn có thể xem thêm ở phần cài đặt
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-2">
-                                 <button class="accordion-buttons collapsed  " type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
-                                    Tôi có thể khóa ứng dụng ghi chú của tôi không?
-                                 </button>
-                              </h2>
-                              <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Bạn có thể xem thêm ở phần cài đặt
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-3">
-                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
-                                    Làm thế nào về bảo mật dữ liệu?
-                                 </button>
-                              </h2>
-                              <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Bạn có thể xem thêm ở phần cài đặt
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-4">
-                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
-                                    Giấy phép nâng cao của tôi có thể được sử dụng cho tất cả các thiết bị không?
-                                 </button>
-                              </h2>
-                              <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Bạn có thể xem thêm ở phần cài đặt
-                                 </div>
-                              </div>
-                           </div>
-                           <!-- <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-5">
-                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
-                                    What makes LessAccounting better than the rest?
-                                 </button>
-                              </h2>
-                              <div id="collapse-5" class="accordion-collapse collapse " aria-labelledby="heading-5"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Bạn có thể xem thêm ở phần cài đặt
-                                 </div>
-                              </div>
-                           </div> -->
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- tp-support-area-end -->
 
    </main>
 
    <footer>
       <!-- tp-footer-area-start -->
-      <div class="tp-footer__area theme-bg pt-120 pb-50">
-         <div class="container">
+      <div class="tp-footer__area theme-bg  pb-50">
+         <!-- <div class="container">
             <div class="row">
                <div class="col-xl-12">
                   <div class="tp-footer__content text-center">
-                     <h3 class="tp-section-title text-white wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">Tải ứng dụng đã có sẵn 📥</h3>
-                     <p class="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Khám phá thêm những tính năng trên ứng dụng. Tải ứng dụng tại App Store hoặc Google Play.</p>
+                     <h3 class="tp-section-title text-white wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">Ready To Download 📥</h3>
+                     <p class="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Discover your new favorite spaces, from Sao Paulo to Seoul. Download from App Store or Google Play.</p>
                   </div>
                   <div class="tp-footer__thumb d-flex justify-content-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
                      <div class="tp-footer__thumb-sm">
@@ -386,34 +329,29 @@
                   </div>
                </div>
             </div>
-         </div>
+         </div> -->
          <div class="tp-footer-bottom__area mt-80 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
             <div class="container">
                <div class="tp-footer-bottom__border-top pt-40">
                   <div class="row align-items-center">
                      <div class="col-xl-2 col-lg-2 col-md-6 col-12 order-2 order-lg-1 text-center text-md-start">
                         <div class="tp-footer-bottom__logo">
-                           <a href="index.html"><img src="assets/img/logo/logoAmazing-removebg-preview.png" alt=""></a>
+                           <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
                         </div>
                      </div>
                      <div class="col-xl-7 col-lg-7 col-md-12 col-12 order-1 order-lg-2 d-none d-sm-block">
                         <div class="tp-footer-bottom__menu">
-                           <ul>
-                              <li><a href="#">Tính năng</a></li>
-                              <li><a href="#">Nhận xét</a></li>
-                              <li><a href="price.html">Định giá</a></li>
-                              <li><a href="faq.html">FAQ</a></li>
-                              <li><a href="blog-details.html">Blog</a></li>
-                           </ul>
+                           <h5 style="color:aliceblue; font-size: medium;">Công Ty TNHH Giải Pháp và Công Nghệ Amazing</h5>
+                           <h6 style="color:aliceblue; font-size: smaller;">Được thành lập vào ngày 16/07/2019 Với AMAZING, bạn có thể đưa ra những ý tưởng mới, những sản phẩm mới, từ đó, công ty của chúng tôi thuận tiên giúp bạn xây nên một sản phẩm theo ý tưởng của bạn.</h6>
                         </div>
                      </div>
                      <div class="col-xl-3 col-lg-3 col-md-6 col-12 order-2 order-lg-3 text-center text-md-end">
                         <div class="tp-footer-bottom__social">
                            <ul>
-                              <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                              <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                              <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                              <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-phone"></i></a></li>
+                              <li><a href="#"><i class="fa fa-mail-bulk"></i></a></li>
+                              <li><a href="#"><i class="fa fa-map-marked"></i></a></li>
                            </ul>
                         </div>
                      </div>
@@ -424,6 +362,7 @@
       </div>
       <!-- tp-footer-area-end -->
    </footer>
+
    <style>
       .navbar1 {
          display: flex;
