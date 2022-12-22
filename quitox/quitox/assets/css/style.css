@@ -1623,7 +1623,7 @@ input[type=color] {
   }
 }
 .tpoffcanvas__text p {
-  color: var(--tp-common-white-2);
+  color: #ffffffd6;
   font-size: 18px;
 }
 .tpoffcanvas__info {
@@ -2187,7 +2187,7 @@ input[type=color] {
   position: relative;
   padding-left: 20px;
   margin-bottom: 5px;
-  color: var(--tp-common-white);
+  color: grey;
 }
 .mobile-menu .sidebar-list li::after {
   top: 10px;
@@ -2447,9 +2447,10 @@ input[type=color] {
   }
 }
 .tp-header__bottom .tp-menu-bar {
-  background-color: var(--tp-theme-2);
-  color: var(--tp-common-white);
-  border-radius: 5px;
+  background-color: white;
+  color: #5a5af1;
+  
+  border-radius: 50px;
 }
 .tp-header__top-left a {
   padding: 15px 0;
@@ -2621,7 +2622,7 @@ input[type=color] {
   }
 }
 .tp-header__black-menu ul li a {
-  color: var(--tp-common-black);
+  color: #2253f6;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-header__black-menu ul li a {
@@ -2629,7 +2630,7 @@ input[type=color] {
   }
 }
 .tp-header__black-menu ul li:hover a {
-  color: var(--tp-theme-1);
+  color: white;
 }
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
   .tp-header__menu-3 ul {
@@ -2655,17 +2656,7 @@ input[type=color] {
     margin-left: 10px;
   }
 }
-.tp-header__bars {
-  height: 55px;
-  width: 55px;
-  line-height: 55px;
-  background-color: var(--tp-common-white);
-  border-radius: 50%;
-  text-align: center;
-  font-size: 20px;
-  color: var(--tp-theme-1);
-  transition: 0.3s;
-}
+
 @media only screen and (min-width: 992px) and (max-width: 1199px), (max-width: 767px) {
   .tp-header__bars {
     height: 45px;
@@ -6968,3 +6959,36 @@ p{
   padding-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */
+.menu-hamberger i{
+  display: flex;
+  background: #2253f6;
+  justify-content: center;
+  align-items:center;
+  width: 40px;
+  font-size: 20px;
+  color: white;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+
+.menu {
+  width: 100%;
+}
+
+.menu ul {
+  display: flex;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+
+.menu ul li {
+  margin: 0 15px;
+  color: #2253f6;
+  transition: .4s;
+  font-weight: 400;
+}
+
+.menu ul li:hover {
+  color: white;
+}

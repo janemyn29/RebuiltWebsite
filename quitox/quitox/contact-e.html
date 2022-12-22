@@ -25,43 +25,51 @@
    <link rel="stylesheet" href="assets/css/font-awesome-pro.css">
    <link rel="stylesheet" href="assets/css/magnific-popup.css">
    <link rel="stylesheet" href="assets/css/spacing.css">
-   <link rel="stylesheet" href="assets/css/style.css"><style>
-    .nut_dropdown {
+   <link rel="stylesheet" href="assets/css/style.css">
+   <style>
 
- color: white;
-       width: 50px;
- font-size: 16px;
- border: none;
-}
-/* Thiết lập vị trí cho thẻ div với class dropdown*/
-.dropdown {
- position: relative;
- display: inline-block;
-}
-/* Nội dung Dropdown */
-.noidung_dropdown {
- /*Ẩn nội dung các đường dẫn*/
- display: none;
- position: absolute;
- background-color: #f1f1f1;
- min-width: 160px;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
-}
-/* Thiết kế style cho các đường dẫn trong Dropdown */
-.noidung_dropdown a {
- color: black;
- padding: 12px 16px;
- text-decoration: none;
- display: block;
-}
-/* thay đổi màu background khi hover vào đường dẫn */
-.noidung_dropdown a:hover {background-color: #ddd;}
-/* hiển thị nội dung dropdown khi hover */
-.dropdown:hover .noidung_dropdown {display: block;}
-/* Thay đổi màu background cho nút khi được hover */
-.dropdown:hover .nut_dropdown {background-color: #00bfff;}
- </style>
+
+      /* Thiết lập vị trí cho thẻ div với class dropdown*/
+      .dropdown {
+         position: relative;
+         display: block;
+      }
+
+      /* Nội dung Dropdown */
+      .noidung_dropdown {
+         /*Ẩn nội dung các đường dẫn*/
+         display: none;
+         position: absolute;
+         background-color: #f1f1f1;
+         min-width: 160px;
+         border-radius: 5px;
+         box-shadow: 0px 8px 16px 0px rgba(108, 108, 108, 0.2);
+         z-index: 1;
+      }
+
+      /* Thiết kế style cho các đường dẫn trong Dropdown */
+      .noidung_dropdown a {
+         color: grey;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+      }
+
+      /* thay đổi màu background khi hover vào đường dẫn */
+      .noidung_dropdown a:hover {
+         background-color: #ddd;
+      }
+
+      /* hiển thị nội dung dropdown khi hover */
+      .dropdown:hover .noidung_dropdown {
+         display: block;
+      }
+
+      /* Thay đổi màu background cho nút khi được hover */
+      .dropdown:hover .nut_dropdown {
+         background-color: #ffffff;
+      }
+   </style>
 </head>
 
 <body>
@@ -86,54 +94,47 @@
    <header>
     <!-- tp-header-area-start -->
     <div id="header-sticky"
-       class="tp-header__area tp-header__space-3 tp-header__transparent z-index-5 tp-header__bottom p-relative">
-       <div class="container-fluid">
-          <div class="row align-items-center">
-             <div class="col-xl-2 col-lg-2 col-md-6 col-7">
-                <div class="tp-header__logo">
-                   <a href="index.html">
-                      <img src="assets/img/logo/logo-black.png" alt="">
-                   </a>
-                </div>
+    class="tp-header__area tp-header__space-3 tp-header__transparent z-index-5 tp-header__bottom p-relative">
+    <div class="container-fluid">
+       <div class="row align-items-center">
+          <div class="col-xl-2 col-lg-2 col-md-6 col-7">
+             <div class="tp-header__logo">
+                <a href="index.html">
+                   <img src="assets/img/logo/logo-black.png" alt="">
+                </a>
              </div>
-             <div class="col-xl-9 col-lg-9 d-none d-lg-block">
-                <div class="tp-header__main-menu tp-header__black-menu tp-header__menu-3">
-                   <nav id="mobile-menu">
-                      <ul>
-                         <li><a href="index3.html">Home</a>
-                            
-                         </li>
-                         <li><a href="about-us-e.html">About Us</a>
-                            
-                         </li>
-                         <li><a href="project-e.html">Product</a>
-                            
-                         </li>
-                         <li><a href="recruit-e.html">Recruitment</a></li>
-                         <li><a href="blog-e.html">Blogs</a></li>
-                         <li><a href="contact-e.html">Contact</a></li>
-                      </ul>
-                   </nav>
-                </div>
+          </div>
+          <div class="col-xl-9 col-lg-9 d-none d-lg-block">
+             <div class="menu">
+                <nav id="mobile-menu">
+                   <ul>
+                      <li><a href="index3.html">Trang chủ</a></li>
+                      <li><a href="about-us-e.html">Giới thiệu</a></li>
+                      <li><a href="project-e.html">Sản phẩm</a></li>
+                      <li><a href="recruit-e.html">Tuyển dụng</a></li>
+                      <li><a href="blog-e.html">Tin tức</a></li>
+                      <li><a href="contact-e.html">Liên hệ</a></li>
+                   </ul>
+                </nav>
              </div>
-             <div class="col-xl-1 col-lg-1 col-md-6 col-5" style="padding-left: 0px;padding-right: 0px;">
-                <div class="tp-header__right-two d-flex align-items-center justify-content-end">
-                   <div class="dropdown">
-                      <button class="nut_dropdown" > <a class="tp-header__bars tp-menu-bar"  ><img src="assets/img/app/flag-1.png" alt=""></a></button>
-                      <div class="noidung_dropdown">
-                        <a href="#"><img width="20px" src="assets/img/app/flag.png" alt="">  Tiếng Việt</a>
-                        <a href="#" style="margin-left:0px"><img width="20px" src="assets/img/app/flag-1.png" alt="">  English</a>
-                        
-                      </div>
-                    </div>   
-                   <a class="tp-header__bars tp-menu-bar" style="margin-top: 15px;margin-bottom: 15px; margin-left: 10px; border-radius: 100%;" href="javascript:void(0)"><i class="far fa-bars"></i></a>
-      
+          </div>
+          <div class="col-xl-1 col-lg-1 col-md-6 col-5" style="padding-left: 0px;padding-right: 0px;">
+             <div class="tp-header__right-two d-flex align-items-center justify-content-end">
+                <div class="dropdown">
+                   <button class="nut_dropdown"> <a class="tp-header__bars tp-menu-bar"><img
+                            src="assets/img/app/flag-1.png" alt=""></a></button>
+                   <div class="noidung_dropdown">
+                      <a href="#"><img width="20px" src="assets/img/app/flag.png" alt=""> Tiếng Việt</a>
+                      <a href="#" style="margin-left:0px"><img width="20px" src="assets/img/app/flag-1.png" alt="">
+                         English</a>
+                   </div>
                 </div>
+                <a class="menu-hamberger" href="javascript:void(0)"><i class="far fa-bars"></i></a>
              </div>
           </div>
        </div>
     </div>
-
+ </div>
 
     <!-- tp-header-area-end -->
  </header>

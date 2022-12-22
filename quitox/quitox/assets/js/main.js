@@ -118,7 +118,7 @@ $(window).on('load', function () {
 
 	////////////////////////////////////////////////////
 	// 09. Sidebar Js
-	$(".tp-menu-bar").on("click", function () {
+	$(".menu-hamberger").on("click", function () {
 		$(".tpoffcanvas").addClass("opened");
 		$(".body-overlay").addClass("apply");
 	});

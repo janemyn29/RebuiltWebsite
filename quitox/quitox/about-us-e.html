@@ -3,6 +3,7 @@
 
 
 <!-- Mirrored from weblearnbd.net/tphtml/quitox-prev/quitox/project.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Dec 2022 12:51:58 GMT -->
+
 <head>
    <meta charset="utf-8">
    <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -27,42 +28,49 @@
    <link rel="stylesheet" href="assets/css/spacing.css">
    <link rel="stylesheet" href="assets/css/style.css">
    <style>
-    .nut_dropdown {
 
- color: white;
-       width: 50px;
- font-size: 16px;
- border: none;
-}
-/* Thiết lập vị trí cho thẻ div với class dropdown*/
-.dropdown {
- position: relative;
- display: inline-block;
-}
-/* Nội dung Dropdown */
-.noidung_dropdown {
- /*Ẩn nội dung các đường dẫn*/
- display: none;
- position: absolute;
- background-color: #f1f1f1;
- min-width: 160px;
- box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
- z-index: 1;
-}
-/* Thiết kế style cho các đường dẫn trong Dropdown */
-.noidung_dropdown a {
- color: black;
- padding: 12px 16px;
- text-decoration: none;
- display: block;
-}
-/* thay đổi màu background khi hover vào đường dẫn */
-.noidung_dropdown a:hover {background-color: #ddd;}
-/* hiển thị nội dung dropdown khi hover */
-.dropdown:hover .noidung_dropdown {display: block;}
-/* Thay đổi màu background cho nút khi được hover */
-.dropdown:hover .nut_dropdown {background-color: #00bfff;}
- </style>
+
+      /* Thiết lập vị trí cho thẻ div với class dropdown*/
+      .dropdown {
+         position: relative;
+         display: block;
+      }
+
+      /* Nội dung Dropdown */
+      .noidung_dropdown {
+         /*Ẩn nội dung các đường dẫn*/
+         display: none;
+         position: absolute;
+         background-color: #f1f1f1;
+         min-width: 160px;
+         border-radius: 5px;
+         box-shadow: 0px 8px 16px 0px rgba(108, 108, 108, 0.2);
+         z-index: 1;
+      }
+
+      /* Thiết kế style cho các đường dẫn trong Dropdown */
+      .noidung_dropdown a {
+         color: grey;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+      }
+
+      /* thay đổi màu background khi hover vào đường dẫn */
+      .noidung_dropdown a:hover {
+         background-color: #ddd;
+      }
+
+      /* hiển thị nội dung dropdown khi hover */
+      .dropdown:hover .noidung_dropdown {
+         display: block;
+      }
+
+      /* Thay đổi màu background cho nút khi được hover */
+      .dropdown:hover .nut_dropdown {
+         background-color: #ffffff;
+      }
+   </style>
 </head>
 
 <body>
@@ -85,160 +93,162 @@
 
 
    <header>
-    <!-- tp-header-area-start -->
-    <div id="header-sticky"
-       class="tp-header__area tp-header__space-3 tp-header__transparent z-index-5 tp-header__bottom p-relative">
-       <div class="container-fluid">
-          <div class="row align-items-center">
-             <div class="col-xl-2 col-lg-2 col-md-6 col-7">
-                <div class="tp-header__logo">
-                   <a href="index.html">
-                      <img src="assets/img/logo/logo-black.png" alt="">
-                   </a>
-                </div>
-             </div>
-             <div class="col-xl-9 col-lg-9 d-none d-lg-block">
-                <div class="tp-header__main-menu tp-header__black-menu tp-header__menu-3">
-                   <nav id="mobile-menu">
-                      <ul>
-                         <li><a href="index3.html">Home</a>
-                            
-                         </li>
-                         <li><a href="about-us-e.html">About Us</a>
-                            
-                         </li>
-                         <li><a href="project-e.html">Product</a>
-                            
-                         </li>
-                         <li><a href="recruit-e.html">Recruitment</a></li>
-                         <li><a href="blog-e.html">Blogs</a></li>
-                         <li><a href="contact-e.html">Contact</a></li>
-                      </ul>
-                   </nav>
-                </div>
-             </div>
-             <div class="col-xl-1 col-lg-1 col-md-6 col-5" style="padding-left: 0px;padding-right: 0px;">
-                <div class="tp-header__right-two d-flex align-items-center justify-content-end">
-                   <div class="dropdown">
-                      <button class="nut_dropdown" > <a class="tp-header__bars tp-menu-bar"  ><img src="assets/img/app/flag-1.png" alt=""></a></button>
-                      <div class="noidung_dropdown">
-                        <a href="#"><img width="20px" src="assets/img/app/flag.png" alt="">  Tiếng Việt</a>
-                        <a href="#" style="margin-left:0px"><img width="20px" src="assets/img/app/flag-1.png" alt="">  English</a>
-                        
-                      </div>
-                    </div>   
-                   <a class="tp-header__bars tp-menu-bar" style="margin-top: 15px;margin-bottom: 15px; margin-left: 10px; border-radius: 100%;" href="javascript:void(0)"><i class="far fa-bars"></i></a>
-      
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
+      <!-- tp-header-area-start -->
+      <div id="header-sticky"
+         class="tp-header__area tp-header__space-3 tp-header__transparent z-index-5 tp-header__bottom p-relative">
+         <div class="container-fluid">
+            <div class="row align-items-center">
+               <div class="col-xl-2 col-lg-2 col-md-6 col-7">
+                  <div class="tp-header__logo">
+                     <a href="index.html">
+                        <img src="assets/img/logo/logo-black.png" alt="">
+                     </a>
+                  </div>
+               </div>
+               <div class="col-xl-9 col-lg-9 d-none d-lg-block">
+                  <div class="menu">
+                     <nav id="mobile-menu">
+                        <ul>
+                           <li><a href="index3.html">Home</a>
+
+                           </li>
+                           <li><a href="about-us-e.html">About Us</a>
+
+                           </li>
+                           <li><a href="project-e.html">Product</a>
+
+                           </li>
+                           <li><a href="recruit-e.html">Recruitment</a></li>
+                           <li><a href="blog-e.html">Blogs</a></li>
+                           <li><a href="contact-e.html">Contact</a></li>
+                        </ul>
+                     </nav>
+                  </div>
+               </div>
+               <div class="col-xl-1 col-lg-1 col-md-6 col-5" style="padding-left: 0px;padding-right: 0px;">
+                  <div class="tp-header__right-two d-flex align-items-center justify-content-between">
+                     <div class="dropdown">
+                        <button class="nut_dropdown"> <a class="tp-header__bars tp-menu-bar"><img
+                                 src="assets/img/app/flag-1.png" alt=""></a></button>
+                        <div class="noidung_dropdown">
+                           <a href="#"><img width="20px" src="assets/img/app/flag.png" alt=""> Tiếng Việt</a>
+                           <a href="#" style="margin-left:0px"><img width="20px" src="assets/img/app/flag-1.png" alt="">
+                              English</a>
+                        </div>
+                     </div>
+                     <a class="menu-hamberger"
+                        href="javascript:void(0)"><i class="far fa-bars"></i></a>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
 
 
-    <!-- tp-header-area-end -->
- </header>
+      <!-- tp-header-area-end -->
+   </header>
 
- <!-- tp-offcanvus-area-start -->
- <div class="tp-offcanvas-area">
-    <div class="tpoffcanvas">
-       <div class="tpoffcanvas__close-btn">
-          <button class="close-btn"><i class="fal fa-times"></i></button>
-       </div>
-       <div class="tpoffcanvas__logo">
-          <a href="index.html">
-             <img src="assets/img/logo/logo.png" alt="">
-          </a>
-       </div>
-       <div class="tpoffcanvas__text">
-          <p>
-             Amazing Technology and Solutions Company Limited was established on July 16, 2019.
-             With AMAZING, you can come up with new ideas, new products,
-             from which our company conveniently helps you build a product according to your idea.
-          </p>
-       </div>
-       <div class="mobile-menu"></div>
-       <div class="tpoffcanvas__info">
-          <h3 class="offcanva-title">Contact With Us</h3>
-          <div class="tp-info-wrapper mb-20 d-flex align-items-center">
-             <div class="tpoffcanvas__info-icon">
-                <a href="#"><i class="fal fa-envelope"></i></a>
-             </div>
-             <div class="tpoffcanvas__info-address">
-                <span>Email</span>
-                <a href="maito:hello@yourmail.com">admin@amazingtech.vn</a>
-             </div>
-          </div>
-          <div class="tp-info-wrapper mb-20 d-flex align-items-center">
-             <div class="tpoffcanvas__info-icon">
-                <a href="#"><i class="fal fa-phone-alt"></i></a>
-             </div>
-             <div class="tpoffcanvas__info-address">
-                <span>Phone</span>
-                <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
-             </div>
-          </div>
-          <div class="tp-info-wrapper mb-20 d-flex align-items-center">
-             <div class="tpoffcanvas__info-icon">
-                <a href="#"><i class="fas fa-map-marker-alt"></i></a>
-             </div>
-             <div class="tpoffcanvas__info-address">
-                <span>Location</span>
-                <a href="https://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank">74 Nguyen Cuu Dam, Tan
-                   Son Nhi Ward, Tan Phu District, HCMC</a>
-             </div>
-          </div>
-       </div>
-       <div class="tpoffcanvas__social">
-          <div class="social-icon">
-             <a href="#"><i class="fab fa-facebook-square"></i></a>
-             <a href="#"><i class="fa fa-mail-bulk"></i></a>
-             <a href="#"><i class="fa fa-phone"></i></a>
-             <a href="#"><i class="fa fa-map-marked"></i></a>
-          </div>
-       </div>
-    </div>
- </div>
- <div class="body-overlay"></div>
- <!-- tp-offcanvus-area-end -->
+   <!-- tp-offcanvus-area-start -->
+   <div class="tp-offcanvas-area">
+      <div class="tpoffcanvas">
+         <div class="tpoffcanvas__close-btn">
+            <button class="close-btn"><i class="fal fa-times"></i></button>
+         </div>
+         <div class="tpoffcanvas__logo">
+            <a href="index.html">
+               <img src="assets/img/logo/logo.png" alt="">
+            </a>
+         </div>
+         <div class="tpoffcanvas__text">
+            <p>
+               Amazing Technology and Solutions Company Limited was established on July 16, 2019.
+               With AMAZING, you can come up with new ideas, new products,
+               from which our company conveniently helps you build a product according to your idea.
+            </p>
+         </div>
+         <div class="mobile-menu"></div>
+         <div class="tpoffcanvas__info">
+            <h3 class="offcanva-title">Contact With Us</h3>
+            <div class="tp-info-wrapper mb-20 d-flex align-items-center">
+               <div class="tpoffcanvas__info-icon">
+                  <a href="#"><i class="fal fa-envelope"></i></a>
+               </div>
+               <div class="tpoffcanvas__info-address">
+                  <span>Email</span>
+                  <a href="maito:hello@yourmail.com">admin@amazingtech.vn</a>
+               </div>
+            </div>
+            <div class="tp-info-wrapper mb-20 d-flex align-items-center">
+               <div class="tpoffcanvas__info-icon">
+                  <a href="#"><i class="fal fa-phone-alt"></i></a>
+               </div>
+               <div class="tpoffcanvas__info-address">
+                  <span>Phone</span>
+                  <a href="tel:(00)45611227890">(00) 456 1122 7890</a>
+               </div>
+            </div>
+            <div class="tp-info-wrapper mb-20 d-flex align-items-center">
+               <div class="tpoffcanvas__info-icon">
+                  <a href="#"><i class="fas fa-map-marker-alt"></i></a>
+               </div>
+               <div class="tpoffcanvas__info-address">
+                  <span>Location</span>
+                  <a href="https://www.google.com/maps/@37.4801311,22.8928877,3z" target="_blank">74 Nguyen Cuu Dam, Tan
+                     Son Nhi Ward, Tan Phu District, HCMC</a>
+               </div>
+            </div>
+         </div>
+         <div class="tpoffcanvas__social">
+            <div class="social-icon">
+               <a href="#"><i class="fab fa-facebook-square"></i></a>
+               <a href="#"><i class="fa fa-mail-bulk"></i></a>
+               <a href="#"><i class="fa fa-phone"></i></a>
+               <a href="#"><i class="fa fa-map-marked"></i></a>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="body-overlay"></div>
+   <!-- tp-offcanvus-area-end -->
 
- <main>
+   <main>
 
-    <!-- breadcrumb area start -->
-    <div class="breadcrumb__area breadcrumb-height p-relative grey-bg"
-       data-background="assets/img/breadcrumb/breadcrumb2.jpg">
-       <div class="breadcrumb__scroll-bottom smooth">
-          <a href="#project">
-             <i class="far fa-arrow-down"></i>
-          </a>
-       </div>
-       <div class="container">
-          <div class="row">
-             <div class="col-xxl-12">
-                <div class="breadcrumb__content text-center">
-                   <h3 class="breadcrumb__title">About Us</h3>
-                   <div class="breadcrumb__list">
-                      <span><a href="index-3.html">Home</a></span>
-                      <span class="dvdr"><i class="fa fa-angle-right"></i></span>
-                      <span>About Us</span>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- breadcrumb area end -->
+      <!-- breadcrumb area start -->
+      <div class="breadcrumb__area breadcrumb-height p-relative grey-bg"
+         data-background="assets/img/breadcrumb/breadcrumb2.jpg">
+         <div class="breadcrumb__scroll-bottom smooth">
+            <a href="#project">
+               <i class="far fa-arrow-down"></i>
+            </a>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-xxl-12">
+                  <div class="breadcrumb__content text-center">
+                     <h3 class="breadcrumb__title">About Us</h3>
+                     <div class="breadcrumb__list">
+                        <span><a href="index-3.html">Home</a></span>
+                        <span class="dvdr"><i class="fa fa-angle-right"></i></span>
+                        <span>About Us</span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- breadcrumb area end -->
 
       <!-- tp-about-area-start -->
       <div id="about-inner__area" class="about-inner__area pt-30 pb-50">
-         
+
          <div class="container">
-            
+
             <div class="row justify-content-center">
                <div class="col-lg-9 col-md-12">
-                  <div class="about-inner__section-box mb-70 text-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+                  <div class="about-inner__section-box mb-70 text-center wow tpfadeUp" data-wow-duration=".9s"
+                     data-wow-delay=".3s">
                      <h3 class="tp-section-title-md">About Us </h3>
-                     <hr/>
+                     <hr />
                   </div>
                </div>
             </div>
@@ -250,16 +260,22 @@
                            <div class="about-inner__thumb w-img">
                               <img src="assets/img/about/CTTNHHAMAZINGTECH.png" alt="">
                            </div>
-                        </div>                     
+                        </div>
                      </div>
                   </div>
                </div>
                <div class="col-xl-5 col-lg-5 wow tpfadeRight" data-wow-duration=".9s" data-wow-delay=".7s">
                   <div class="about-inner__right">
                      <div class="about-inner__content">
-                        <p><b>Amazing Technology and Solutions Co., Ltd.</b> operates in the field of providing software, information technology (IT) solutions and services at the request of customers. Amazing products and services are built by experienced IT experts and engineers in deploying IT services and solutions for domestic and foreign businesses.</p>
-                        <p>Come to Amazing. Customers will be consulted fully and in detail about the information technology products and services that Amazing provides based on your requirements. Amazing believes in its knowledge and experience to bring the best service quality and satisfaction to customers.</p>
-                     </div>                                         
+                        <p><b>Amazing Technology and Solutions Co., Ltd.</b> operates in the field of providing
+                           software, information technology (IT) solutions and services at the request of customers.
+                           Amazing products and services are built by experienced IT experts and engineers in deploying
+                           IT services and solutions for domestic and foreign businesses.</p>
+                        <p>Come to Amazing. Customers will be consulted fully and in detail about the information
+                           technology products and services that Amazing provides based on your requirements. Amazing
+                           believes in its knowledge and experience to bring the best service quality and satisfaction
+                           to customers.</p>
+                     </div>
                   </div>
                </div>
             </div>
@@ -429,7 +445,8 @@
          <div class="container">
             <div class="row justify-content-center">
                <div class="col-lg-6 col-10">
-                  <div class="tp-price__section text-center pb-60 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">
+                  <div class="tp-price__section text-center pb-60 wow tpfadeUp" data-wow-duration=".9s"
+                     data-wow-delay=".3s">
                      <h3 class="tp-section-title-sm pb-20">Why should choose us?</h3>
                   </div>
                </div>
@@ -442,8 +459,10 @@
                      </div>
                      <h3 class="tp-price__title">Professional team</h3>
                      <div class="tp-price__list">
-                        <p style="height: 216px;">Amazing company has a professional team in consulting support and customer care. Our team is dedicated, enthusiastic, always listening and trying to perfect in each product and service to bring satisfaction to customers.</p>
-                     </div>                    
+                        <p style="height: 216px;">Amazing company has a professional team in consulting support and
+                           customer care. Our team is dedicated, enthusiastic, always listening and trying to perfect in
+                           each product and service to bring satisfaction to customers.</p>
+                     </div>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-6 mb-30-pd-5 wow tpfadeUp">
@@ -453,8 +472,10 @@
                      </div>
                      <h3 class="tp-price__title">Policy</h3>
                      <div class="tp-price__list">
-                        <p style="height: 216px;">We have a timely, effective and fast warranty policy. Always listen to the opinions and needs of customers. Assist customers in enhancing the experience. And support customers in upgrading features.</p>
-                     </div>                    
+                        <p style="height: 216px;">We have a timely, effective and fast warranty policy. Always listen to
+                           the opinions and needs of customers. Assist customers in enhancing the experience. And
+                           support customers in upgrading features.</p>
+                     </div>
                   </div>
                </div>
                <div class="col-xl-4 col-lg-4 col-md-6 mb-30-pd-5 wow tpfadeRight">
@@ -466,8 +487,10 @@
                      </div>
                      <h3 class="tp-price__title">Products of Amazing Tech</h3>
                      <div class="tp-price__list">
-                        <p style="height: 216px;">Amazing specializes in consulting, setting up, supplying and operating software systems, designing professional websites, transferring information technology solutions and applications suitable for domestic and foreign businesses in many fields. .</p>
-                     </div>                    
+                        <p style="height: 216px;">Amazing specializes in consulting, setting up, supplying and operating
+                           software systems, designing professional websites, transferring information technology
+                           solutions and applications suitable for domestic and foreign businesses in many fields. .</p>
+                     </div>
                   </div>
                </div>
             </div>
@@ -567,60 +590,61 @@
       <!-- tp-team-area-end -->
 
       <!-- tp-price-area-start -->
-     
+
       <div class="tp-team__area p-relative">
-         
-        <div class="tp-team__ml-mr theme-bg-3 pt-120 pb-120" style="background-color: #ffffffb4; border-color: #0025a9;">
-           <div class="container">
-              <div class="row">
-                 <div class="col-12 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
-                    <div class="tp-team__section-box d-flex justify-content-between">
-                       <h3 class="tp-section-title-md ">Our Partners</h3>
-                    </div>
-                 </div>
-              </div>
-              
-              <div class="tp-brand-slide-section">
-                 <div class="tp-barnd__active">
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
-                       <img width="200px" src="assets/img/brand/brand-1.png" alt="">
-                    </div>
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                       <img width="200px" src="assets/img/brand/brand-2.png" alt="">
-                    </div>
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-                       <img width="200px" src="assets/img/brand/brand-3.jpg" alt="">
-                    </div>
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1s">
-                       <img width="200px" src="assets/img/brand/brand-4.jpg" alt="">
-                    </div>
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.1s">
-                       <img width="200px" src="assets/img/brand/brand-5.png" alt="">
-                    </div>
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
-                       <img width="200px" src="assets/img/brand/brand-6.jpg" alt="">
-                    </div>
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
-                       <img width="200px"  src="assets/img/brand/brand-7.png" alt="">
-                    </div>
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
-                       <img width="200px" src="assets/img/brand/brand-8.png" alt="">
-                    </div>
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
-                       <img width="200px" src="assets/img/brand/brand-9.png" alt="">
-                    </div>
-                    
-                    <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
-                       <img width="200px" src="assets/img/brand/brand-10.png" alt="">
-                    </div>
-                    
-                 </div>
-              </div>
-              </div>
-           </div>
-        </div>
-        
-     </div>
+
+         <div class="tp-team__ml-mr theme-bg-3 pt-120 pb-120"
+            style="background-color: #ffffffb4; border-color: #0025a9;">
+            <div class="container">
+               <div class="row">
+                  <div class="col-12 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
+                     <div class="tp-team__section-box d-flex justify-content-between">
+                        <h3 class="tp-section-title-md ">Our Partners</h3>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="tp-brand-slide-section">
+                  <div class="tp-barnd__active">
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">
+                        <img width="200px" src="assets/img/brand/brand-1.png" alt="">
+                     </div>
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
+                        <img width="200px" src="assets/img/brand/brand-2.png" alt="">
+                     </div>
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+                        <img width="200px" src="assets/img/brand/brand-3.jpg" alt="">
+                     </div>
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1s">
+                        <img width="200px" src="assets/img/brand/brand-4.jpg" alt="">
+                     </div>
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.1s">
+                        <img width="200px" src="assets/img/brand/brand-5.png" alt="">
+                     </div>
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
+                        <img width="200px" src="assets/img/brand/brand-6.jpg" alt="">
+                     </div>
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
+                        <img width="200px" src="assets/img/brand/brand-7.png" alt="">
+                     </div>
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
+                        <img width="200px" src="assets/img/brand/brand-8.png" alt="">
+                     </div>
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
+                        <img width="200px" src="assets/img/brand/brand-9.png" alt="">
+                     </div>
+
+                     <div class="tp-brand__item wow tpfadeUp" data-wow-duration=".9s" data-wow-delay="1.2s">
+                        <img width="200px" src="assets/img/brand/brand-10.png" alt="">
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+
+      </div>
       <!-- tp-price-area-end -->
 
       <!-- tp-faq-area-start -->
@@ -728,9 +752,9 @@
    </main>
 
    <footer>
-    <!-- tp-footer-area-start -->
-    <div class="tp-footer__area theme-bg  pb-50">
-       <!-- <div class="container">
+      <!-- tp-footer-area-start -->
+      <div class="tp-footer__area theme-bg  pb-50">
+         <!-- <div class="container">
           <div class="row">
              <div class="col-xl-12">
                 <div class="tp-footer__content text-center">
@@ -748,41 +772,42 @@
              </div>
           </div>
        </div> -->
-       <div class="tp-footer-bottom__area mt-80 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
-          <div class="container">
-             <div class="tp-footer-bottom__border-top pt-40">
-                <div class="row align-items-center">
-                   <div class="col-xl-2 col-lg-2 col-md-6 col-12 order-2 order-lg-1 text-center text-md-start">
-                      <div class="tp-footer-bottom__logo">
-                         <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
-                      </div>
-                   </div>
-                   <div class="col-xl-7 col-lg-7 col-md-12 col-12 order-1 order-lg-2 d-none d-sm-block">
-                      <div class="tp-footer-bottom__menu">
-                         <h5 style="color:aliceblue; font-size: medium;">Amazing Technology and Solutions Co., Ltd
-                         </h5>
-                         <h6 style="color:aliceblue; font-size: smaller;">Amazing Technology and Solutions Company Limited was established on July 16, 2019.
-                            With AMAZING, you can come up with new ideas, new products,
-                            from which our company conveniently helps you build a product according to your idea.</h6>
-                      </div>
-                   </div>
-                   <div class="col-xl-3 col-lg-3 col-md-6 col-12 order-2 order-lg-3 text-center text-md-end">
-                      <div class="tp-footer-bottom__social">
-                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                            <li><a href="#"><i class="fa fa-phone"></i></a></li>
-                            <li><a href="#"><i class="fa fa-mail-bulk"></i></a></li>
-                            <li><a href="#"><i class="fa fa-map-marked"></i></a></li>
-                         </ul>
-                      </div>
-                   </div>
-                </div>
-             </div>
-          </div>
-       </div>
-    </div>
-    <!-- tp-footer-area-end -->
- </footer>
+         <div class="tp-footer-bottom__area mt-80 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
+            <div class="container">
+               <div class="tp-footer-bottom__border-top pt-40">
+                  <div class="row align-items-center">
+                     <div class="col-xl-2 col-lg-2 col-md-6 col-12 order-2 order-lg-1 text-center text-md-start">
+                        <div class="tp-footer-bottom__logo">
+                           <a href="index.html"><img src="assets/img/logo/logo.png" alt=""></a>
+                        </div>
+                     </div>
+                     <div class="col-xl-7 col-lg-7 col-md-12 col-12 order-1 order-lg-2 d-none d-sm-block">
+                        <div class="tp-footer-bottom__menu">
+                           <h5 style="color:aliceblue; font-size: medium;">Amazing Technology and Solutions Co., Ltd
+                           </h5>
+                           <h6 style="color:aliceblue; font-size: smaller;">Amazing Technology and Solutions Company
+                              Limited was established on July 16, 2019.
+                              With AMAZING, you can come up with new ideas, new products,
+                              from which our company conveniently helps you build a product according to your idea.</h6>
+                        </div>
+                     </div>
+                     <div class="col-xl-3 col-lg-3 col-md-6 col-12 order-2 order-lg-3 text-center text-md-end">
+                        <div class="tp-footer-bottom__social">
+                           <ul>
+                              <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                              <li><a href="#"><i class="fa fa-phone"></i></a></li>
+                              <li><a href="#"><i class="fa fa-mail-bulk"></i></a></li>
+                              <li><a href="#"><i class="fa fa-map-marked"></i></a></li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- tp-footer-area-end -->
+   </footer>
 
    <style>
       .navbar1 {
@@ -800,6 +825,7 @@
          animation: 500ms ease-in-out 0s normal none 1 running fadeInDown;
          z-index: 999;
       }
+
       ul.breadcrumb {
          padding: 10px 16px;
          list-style: none;
@@ -815,7 +841,7 @@
       /* Add a slash symbol (/) before/behind each list item */
       ul.breadcrumb li+li:before {
          padding: 8px;
-         color: black;
+         color: rgb(85, 85, 85);
          content: "/\00a0";
       }
 
@@ -827,7 +853,7 @@
 
       /* Add a color on mouse-over */
       ul.breadcrumb li a:hover {
-         color: black;
+         color: rgb(84, 84, 84);
          text-decoration: underline;
       }
    </style>
@@ -854,4 +880,5 @@
 
 
 <!-- Mirrored from weblearnbd.net/tphtml/quitox-prev/quitox/about-us.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 15 Dec 2022 12:51:50 GMT -->
+
 </html>
