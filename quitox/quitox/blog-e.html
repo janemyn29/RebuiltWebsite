@@ -32,39 +32,51 @@
    <style>
       .nut_dropdown {
 
-   color: white;
+         color: white;
          width: 50px;
-   font-size: 16px;
-   border: none;
- }
-/* Thiết lập vị trí cho thẻ div với class dropdown*/
- .dropdown {
-   position: relative;
-   display: inline-block;
- }
-/* Nội dung Dropdown */
- .noidung_dropdown {
-   /*Ẩn nội dung các đường dẫn*/
-   display: none;
-   position: absolute;
-   background-color: #f1f1f1;
-   min-width: 160px;
-   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-   z-index: 1;
- }
-/* Thiết kế style cho các đường dẫn trong Dropdown */
- .noidung_dropdown a {
-   color: black;
-   padding: 12px 16px;
-   text-decoration: none;
-   display: block;
- }
- /* thay đổi màu background khi hover vào đường dẫn */
- .noidung_dropdown a:hover {background-color: #ddd;}
-/* hiển thị nội dung dropdown khi hover */
- .dropdown:hover .noidung_dropdown {display: block;}
-/* Thay đổi màu background cho nút khi được hover */
- .dropdown:hover .nut_dropdown {background-color: #00bfff;}
+         font-size: 16px;
+         border: none;
+      }
+
+      /* Thiết lập vị trí cho thẻ div với class dropdown*/
+      .dropdown {
+         position: relative;
+         display: inline-block;
+      }
+
+      /* Nội dung Dropdown */
+      .noidung_dropdown {
+         /*Ẩn nội dung các đường dẫn*/
+         display: none;
+         position: absolute;
+         background-color: #f1f1f1;
+         min-width: 160px;
+         box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+         z-index: 1;
+      }
+
+      /* Thiết kế style cho các đường dẫn trong Dropdown */
+      .noidung_dropdown a {
+         color: black;
+         padding: 12px 16px;
+         text-decoration: none;
+         display: block;
+      }
+
+      /* thay đổi màu background khi hover vào đường dẫn */
+      .noidung_dropdown a:hover {
+         background-color: #ddd;
+      }
+
+      /* hiển thị nội dung dropdown khi hover */
+      .dropdown:hover .noidung_dropdown {
+         display: block;
+      }
+
+      /* Thay đổi màu background cho nút khi được hover */
+      .dropdown:hover .nut_dropdown {
+         background-color: #00bfff;
+      }
    </style>
 </head>
 
@@ -104,18 +116,30 @@
                   <div class="tp-header__main-menu tp-header__black-menu tp-header__menu-3">
                      <nav id="mobile-menu">
                         <ul>
-                           <li><a href="index-3.html">Home</a>
-                              
+                           <li class="navbar1_link"
+                              style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+                              <a style="font-weight: 400;" href="index-3.html">Home</a>
+
                            </li>
-                           <li><a href="about-us-e.html">About Us</a>
-                              
+                           <li class="navbar1_link"
+                              style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;  ">
+                              <a style="font-weight: 400;" href="about-us-e.html">About us</a>
+
                            </li>
-                           <li><a href="project-e.html">Product</a>
-                              
+                           <li class="navbar1_link"
+                              style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+                              <a style="font-weight: 400;" href="project-e.html">product</a>
+
                            </li>
-                           <li><a href="recruit-e.html">Recruitment</a></li>
-                           <li><a href="blog-e.html">Blogs</a></li>
-                           <li><a href="contact-e.html">Contact</a></li>
+                           <li class="active" class="navbar1_link"
+                              style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+                              <a style="font-weight: 400;" href="recruit-e.html">recruitment</a></li>
+                           <li class="navbar1_link"
+                              style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+                              <a style="font-weight: 400;" href="blog-e.html">blogs</a></li>
+                           <li class="navbar1_link"
+                              style="font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; ">
+                              <a style="font-weight: 400;" href="contact-e.html">Contact</a></li>
                         </ul>
                      </nav>
                   </div>
@@ -123,15 +147,19 @@
                <div class="col-xl-1 col-lg-1 col-md-6 col-5" style="padding-left: 0px;padding-right: 0px;">
                   <div class="tp-header__right-two d-flex align-items-center justify-content-end">
                      <div class="dropdown">
-                        <button class="nut_dropdown" > <a class="tp-header__bars tp-menu-bar"  ><img src="assets/img/app/flag-1.png" alt=""></a></button>
+                        <button class="nut_dropdown"> <a class="tp-header__bars tp-menu-bar"><img
+                                 src="assets/img/app/flag-1.png" alt=""></a></button>
                         <div class="noidung_dropdown">
-                          <a href="#"><img width="20px" src="assets/img/app/flag.png" alt="">  Tiếng Việt</a>
-                          <a href="#" style="margin-left:0px"><img width="20px" src="assets/img/app/flag-1.png" alt="">  English</a>
-                          
+                           <a href="#"><img width="20px" src="assets/img/app/flag.png" alt=""> Tiếng Việt</a>
+                           <a href="#" style="margin-left:0px"><img width="20px" src="assets/img/app/flag-1.png" alt="">
+                              English</a>
+
                         </div>
-                      </div>   
-                     <a class="tp-header__bars tp-menu-bar" style="margin-top: 15px;margin-bottom: 15px; margin-left: 10px; border-radius: 100%;" href="javascript:void(0)"><i class="far fa-bars"></i></a>
-        
+                     </div>
+                     <a class="tp-header__bars tp-menu-bar"
+                        style="margin-top: 15px;margin-bottom: 15px; margin-left: 10px; border-radius: 100%;"
+                        href="javascript:void(0)"><i class="far fa-bars"></i></a>
+
                   </div>
                </div>
             </div>
@@ -236,218 +264,203 @@
       <div class="tp-project__area tp-project__border pt-30 pb-90">
          <div class="container">
             <div class="row">
-               <ul class="breadcrumb mb-30">
-                  <li><a href="#">Home</a></li>
-                  <li>Blogs</li>
-               </ul>
-            </div>
-            <div id="project" class="tp-project__item mb-10">
-               <div class="tp-project__content">
-                  <h3 class="tp-project__title"><a href="blog-details-e.html" style="text-transform: capitalize;">
-                     Vietnamese engineer invents chocolate heating machine </a></h3>
-                  <h6 style="text-transform: capitalize; ">June 17, 2021</h6>
-                  <p>Mr. Nguyen Hong Huy (32 years old), researches a chocolate heating 
-                     machine with a capacity of 40 kg per hour, 
-                     half the price compared to ...</p>
-               </div>
-            </div>
-            <div id="project" class="tp-project__item mb-10">
-               <div class="tp-project__content">
-                  <h3 class="tp-project__title"><a href="blog-details.html" style="text-transform: capitalize;">
-                     Laser technology to charge devices from a distance of 30m</a></h3>
-                  <h6 style="text-transform: capitalize; ">September 6, 2022</h6>
-                  <p>Korea Sejong University's system uses infrared lasers with 
-                     wavelengths that are safe for humans to transmit energy to ...</p>
-               </div>
-            </div>
-            <div id="project" class="tp-project__item mb-10">
-               <div class="tp-project__content">
-                  <h3 class="tp-project__title"><a href="blog-details.html" style="text-transform: capitalize;">
-                     Students make smart trash cans </a></h3>
-                  <h6 style="text-transform: capitalize; ">September 5, 2022</h6>
-                  <p>Trash cans developed by a group of students from the University
-                     of Danang can automatically disinfect, report full and manage 
-                     on the phone ...</p>
-               </div>
-            </div>
-            <div id="project" class="tp-project__item mb-10">
-               <div class="tp-project__content">
-                  <h3 class="tp-project__title"><a href="blog-details.html" style="text-transform: capitalize;">
-                     Students make plant-based milk from soybean residue
-                      and pomegranate seeds</a></h3>
-                  <h6 style="text-transform: capitalize; ">September 3, 2022</h6>
-                  <p>Using soybean residue and pomegranate seeds, a group of students 
-                     from the University of Food Industry in Ho Chi Minh City
-                      researched technology to increase jaw function ...</p>
-               </div>
-            </div>
-            <div id="project" class="tp-project__item mb-10">
-               <div class="tp-project__content">
-                  <h3 class="tp-project__title"><a href="blog-details.html" style="text-transform: capitalize;">
-                     Dr. Viet made soundproof walls from straw</a></h3>
-                  <h6 style="text-transform: capitalize; ">September 1, 2022</h6>
-                  <p>Researching the separation of hollow cellulose fibers from straw,
-                      Dr. Vu Viet Dung (33 years old) and his colleagues created 
-                      soundproof wall panels that met the standards ...</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <!-- tp-project-area-end -->
-      <center>
-         <div class="basic-pagination">
-            <nav>
-               <ul>
-                  <li>
-                     <a href="">
-                        <i class="fal fa-arrow-left"></i>
-                     </a>
-                  </li>
-                  <li>
-                     <a class="current">1</a>
-                  </li>
-                  <li>
-                     <span>2</span>
-                  </li>
-                  <li>
-                     <a href="">3</a>
-                  </li>
-                  <li>
-                     <a href="">
-                        <i class="fal fa-arrow-right"></i>
-                     </a>
-                  </li>
-               </ul>
-            </nav>
-         </div>
-      </center>
 
-
-      <!-- tp-support-area-start -->
-      <!-- <div class="tp-support__area pt-120 pb-120 grey-bg p-relative">
-         <div class="tp-support__bg">
-            <img src="assets/img/faq/faq-bg-shape.png" alt="">
-         </div>
-         <div class="container">
-            <div class="row">
-               <div class="col-12">
-                  <div class="tp-support__title-box text-center mb-70">
-                     <h3 class="tp-section-title">Need A Support? 🎧</h3>
+            </div>
+            <div id="project" class="tp-project__item mb-10">
+               <div class="row">
+                  <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-3 col-lg-6 mb-30 wow tpfadeLeft"
+                     data-wow-duration=".9s" data-wow-delay=".5s">
+                     <div class="tp-project__content">
+                        <img style="width: 241px; height: 144px;" src="assets/img/blog/news1.jpeg" alt="">
+                     </div>
                   </div>
-               </div>
-            </div>
-            <div class="row">
-               <div class="col-12">
-                  <div class="tp-support__faq">
-                     <div class="tp-custom-accordio-2">
-                        <div class="accordion" id="accordionExample-2">
-                           <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-1">
-                                 <button class="accordion-buttons " type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">
-                                    How Do I Change My Email or Password?
-                                 </button>
-                              </h2>
-                              <div id="collapse-1" class="accordion-collapse collapse show" aria-labelledby="heading-1"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Through the collaboration with customers in discussing needs and demand, we're able
-                                    to attain mutual understanding, gain customer trust <br> to offer appropriate advice
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-2">
-                                 <button class="accordion-buttons collapsed  " type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-2" aria-expanded="true" aria-controls="collapse-2">
-                                    Can I Lock My Note App?
-                                 </button>
-                              </h2>
-                              <div id="collapse-2" class="accordion-collapse collapse" aria-labelledby="heading-2"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Through the collaboration with customers in discussing needs and demand, we're able
-                                    to attain mutual understanding, gain customer trust <br> to offer appropriate advice
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-3">
-                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-3" aria-expanded="true" aria-controls="collapse-3">
-                                    How About Data Security & NDA Agreement
-                                 </button>
-                              </h2>
-                              <div id="collapse-3" class="accordion-collapse collapse " aria-labelledby="heading-3"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Through the collaboration with customers in discussing needs and demand, we're able
-                                    to attain mutual understanding, gain customer trust <br> to offer appropriate advice
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-4">
-                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-4" aria-expanded="true" aria-controls="collapse-4">
-                                    Can My Premium License Be Used For All Devices?
-                                 </button>
-                              </h2>
-                              <div id="collapse-4" class="accordion-collapse collapse " aria-labelledby="heading-4"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Through the collaboration with customers in discussing needs and demand, we're able
-                                    to attain mutual understanding, gain customer trust <br> to offer appropriate advice
-                                 </div>
-                              </div>
-                           </div>
-                           <div class="accordion-items">
-                              <h2 class="accordion-header" id="heading-5">
-                                 <button class="accordion-buttons collapsed" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-5" aria-expanded="true" aria-controls="collapse-5">
-                                    What makes LessAccounting better than the rest?
-                                 </button>
-                              </h2>
-                              <div id="collapse-5" class="accordion-collapse collapse " aria-labelledby="heading-5"
-                                 data-bs-parent="#accordionExample-2">
-                                 <div class="accordion-body">
-                                    Through the collaboration with customers in discussing needs and demand, we're able
-                                    to attain mutual understanding, gain customer trust <br> to offer appropriate advice
-                                 </div>
-                              </div>
-                           </div>
-                        </div>
+                  <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-9 col-lg-6 mb-30 wow tpfadeLeft"
+                     data-wow-duration=".9s" data-wow-delay=".5s">
+                     <div class="tp-project__content">
+                        <h3 class="tp-project__title"><a href="blog-details-e.html" style="text-transform: capitalize;">
+                              Vietnamese engineer invents chocolate heating machine </a></h3>
+                        <h6 style="text-transform: capitalize; ">June 17, 2021</h6>
+                        <p>Mr. Nguyen Hong Huy (32 years old), researches a chocolate heating
+                           machine with a capacity of 40 kg per hour,
+                           half the price compared to ...</p>
                      </div>
                   </div>
                </div>
             </div>
+
+               <div id="project" class="tp-project__item mb-10">
+                  <div class="row">
+                     <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-3 col-lg-6 mb-30 wow tpfadeLeft"
+                        data-wow-duration=".9s" data-wow-delay=".5s">
+                        <div class="tp-project__content">
+                           <img style="width: 241px; height: 144px;" src="assets/img/blog/news2.jpeg" alt="">
+                        </div>
+                     </div>
+                     <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-9 col-lg-6 mb-30 wow tpfadeLeft"
+                        data-wow-duration=".9s" data-wow-delay=".5s">
+                        <div class="tp-project__content">
+
+                           <h3 class="tp-project__title"><a href="blog-details.html"
+                                 style="text-transform: capitalize;">
+                                 Laser technology to charge devices from a distance of 30m</a></h3>
+                           <h6 style="text-transform: capitalize; ">September 6, 2022</h6>
+                           <p>Korea Sejong University's system uses infrared lasers with
+                              wavelengths that are safe for humans to transmit energy to ...</p>
+                        </div>
+                     </div>
+                  </div>
+
+
+
+               </div>
+               <div id="project" class="tp-project__item mb-10">
+                  <div class="row">
+                     <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-3 col-lg-6 mb-30 wow tpfadeLeft"
+                        data-wow-duration=".9s" data-wow-delay=".5s">
+                        <div class="tp-project__content">
+                           <img style="width: 241px; height: 144px;" src="assets/img/blog/news3.jpeg" alt="">
+                        </div>
+                     </div>
+                     <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-9 col-lg-6 mb-30 wow tpfadeLeft"
+                        data-wow-duration=".9s" data-wow-delay=".5s">
+                        <div class="tp-project__content">
+                           <h3 class="tp-project__title"><a href="blog-details.html" style="text-transform: capitalize;">
+                                 Students make smart trash cans </a></h3>
+                           <h6 style="text-transform: capitalize; ">September 5, 2022</h6>
+                           <p>Trash cans developed by a group of students from the University
+                              of Danang can automatically disinfect, report full and manage
+                              on the phone ...</p>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+               <div id="project" class="tp-project__item mb-10">
+                  <div class="row">
+                     <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-3 col-lg-6 mb-30 wow tpfadeLeft"
+                        data-wow-duration=".9s" data-wow-delay=".5s">
+                        <div class="tp-project__content">
+                           <img style="width: 241px; height: 144px;" src="assets/img/blog/news4.jpeg" alt="">
+                        </div>
+                     </div>
+                     <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-9 col-lg-6 mb-30 wow tpfadeLeft"
+                        data-wow-duration=".9s" data-wow-delay=".5s">
+                        <div class="tp-project__content">
+                           <h3 class="tp-project__title"><a href="blog-details.html" style="text-transform: capitalize;">
+                                 Students make plant-based milk from soybean residue
+                                 and pomegranate seeds</a></h3>
+                           <h6 style="text-transform: capitalize; ">September 3, 2022</h6>
+                           <p>Using soybean residue and pomegranate seeds, a group of students
+                              from the University of Food Industry in Ho Chi Minh City
+                              researched technology to increase jaw function ...</p>
+                        </div>
+                     </div>
+                  </div>
+
+                  
+               </div>
+               <div id="project" class="tp-project__item mb-10">
+                  <div class="row">
+                     <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-3 col-lg-6 mb-30 wow tpfadeLeft"
+                        data-wow-duration=".9s" data-wow-delay=".5s">
+                        <div class="tp-project__content">
+                           <img style="width: 241px; height: 144px;" src="assets/img/blog/news4.jpeg" alt="">
+                        </div>
+                     </div>
+                     <div style="margin-top: 15px; margin-bottom: 15px;" class="col-xl-9 col-lg-6 mb-30 wow tpfadeLeft"
+                        data-wow-duration=".9s" data-wow-delay=".5s">
+                        <div class="tp-project__content">
+                           <h3 class="tp-project__title"><a href="blog-details.html" style="text-transform: capitalize;">
+                                 Dr. Viet made soundproof walls from straw</a></h3>
+                           <h6 style="text-transform: capitalize; ">September 1, 2022</h6>
+                           <p>Researching the separation of hollow cellulose fibers from straw,
+                              Dr. Vu Viet Dung (33 years old) and his colleagues created
+                              soundproof wall panels that met the standards ...</p>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+            </div>
          </div>
-      </div> -->
-      <!-- tp-support-area-end -->
+         <!-- tp-project-area-end -->
+         <center style="margin-bottom: 80px;">
+            <div class="basic-pagination">
+               <nav>
+                  <ul>
+                     <li>
+                        <a href="">
+                           <i class="fal fa-arrow-left"></i>
+                        </a>
+                     </li>
+                     <li>
+                        <a class="current">1</a>
+                     </li>
+                     <li>
+                        <span>2</span>
+                     </li>
+                     <li>
+                        <a href="">3</a>
+                     </li>
+                     <li>
+                        <a href="">
+                           <i class="fal fa-arrow-right"></i>
+                        </a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </center>
+
+
 
    </main>
 
    <footer>
       <!-- tp-footer-area-start -->
       <div class="tp-footer__area theme-bg  pb-50">
-         <!-- <div class="container">
-            <div class="row">
-               <div class="col-xl-12">
-                  <div class="tp-footer__content text-center">
-                     <h3 class="tp-section-title text-white wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".3s">Ready To Download 📥</h3>
-                     <p class="wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".5s">Discover your new favorite spaces, from Sao Paulo to Seoul. Download from App Store or Google Play.</p>
-                  </div>
-                  <div class="tp-footer__thumb d-flex justify-content-center wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".7s">
-                     <div class="tp-footer__thumb-sm">
-                        <a href="#"><img src="assets/img/app/app-2.png" alt=""></a>
+         <div class="tp-conatact-area pt-120 pb-0">
+            <div class="container">
+
+
+               <div class="row">
+                  <div class="col-xl-4 col-lg-4 col-md-4 mb-30 " style="height: 272px;">
+                     <div class="contact-info text-center" style="border-color:white;">
+                        <span class="contact-icon"><i class="fas fa-map-marker-alt"></i></span>
+                        <h4 style="color: white">Visit Us Daily</h4>
+                        <span>
+                           <a style="color: white" href="https://www.google.com.bd/maps/@10.795064,106.631622,15z"
+                              target="_blank">74 Nguyen Cuu Dam, Tan Son Nhi Ward, Tan Phu District, HCMC</a>
+                        </span>
                      </div>
-                     <div class="tp-footer__thumb-sm">
-                        <a href="#"><img src="assets/img/app/app-3.png" alt=""></a>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 mb-30" style="height: 272px;">
+                     <div class="contact-info text-center" style="border-color: white;">
+                        <span class="contact-icon"><i class="fas fa-phone-volume"></i></span>
+                        <h4 style="color: white">Contact Us</h4>
+                        <span>
+                           <a style="color: white" href="tel:1255568652">+1255 - 568 - 6523</a>
+                        </span>
+                        <p style="height: 30px; margin-bottom: 0px;"></p>
+
+                     </div>
+                  </div>
+                  <div class="col-xl-4 col-lg-4 col-md-4 mb-30" style="height: 272px;">
+                     <div class="contact-info text-center" style="border-color: white;">
+                        <span class="contact-icon"><i class="fas fa-envelope"></i></span>
+                        <h4 style="color: white">Email Us</h4>
+                        <span>
+                           <a style="color: white" href="mailto:admin@amazingtech.vn">admin@amazingtech.vn </a>
+                        </span>
+                        <p style="height: 30px; margin-bottom: 0px;"></p>
+
+
                      </div>
                   </div>
                </div>
+
             </div>
-         </div> -->
+         </div>
          <div class="tp-footer-bottom__area mt-80 wow tpfadeUp" data-wow-duration=".9s" data-wow-delay=".9s">
             <div class="container">
                <div class="tp-footer-bottom__border-top pt-40">
@@ -461,7 +474,8 @@
                         <div class="tp-footer-bottom__menu">
                            <h5 style="color:aliceblue; font-size: medium;">Amazing Technology and Solutions Co., Ltd
                            </h5>
-                           <h6 style="color:aliceblue; font-size: smaller;">Amazing Technology and Solutions Company Limited was established on July 16, 2019.
+                           <h6 style="color:aliceblue; font-size: smaller;">Amazing Technology and Solutions Company
+                              Limited was established on July 16, 2019.
                               With AMAZING, you can come up with new ideas, new products,
                               from which our company conveniently helps you build a product according to your idea.</h6>
                         </div>
